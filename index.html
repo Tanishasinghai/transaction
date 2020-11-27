@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Transactions
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <h1>Transactions</h1>
+        <div class="box">
+            <select name="portfolio" id="portfolio">
+                <option value="" disabled selected hidden>Select portfolio</option>
+                <option value='a'>a</option>
+                <option value="b">b</option>
+            </select>
+            <select name="transaction" id="portfolio">
+                <option value="" disabled selected hidden>Select Transaction Type</option>
+                <option value='a'>a</option>
+                <option value="b">b</option>
+            </select>
+        </div>
+        <div class="container">
+            <div class="tableDiv">
+            <table cellpadding='0' cellspacing='0' rules='groups'> 
+               <tr class='headerRow'>
+                <th >SIP</th>
+                <th>Fund Name</th>
+                <th>Category</th>
+                <th>
+                <td>Installement<br> Account</th> 
+                <td>Complete<br> Installements</th>
+                </th>
+                <th>Date</th>
+                <th>Status</th>
+               </tr>
+               <tr class='rowDiv'>
+                <td ><div class='sip'  style="background: #396afc;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                text-align: center">SIP</div></td>
+                <td>Aditya Birla FrontLine Equity...</td>
+                <td>Equity Large Cap</td>
+                <td>
+                <td>125,356.000</td>
+                <td>104.52</td>
+            </td>
+                <td>13:32 12:30:56</td>
+                <td>Completed</td>
+               </tr>
+               <tr class='rowDiv'>
+                <td ><div class='sip' id='cs'  style='background: #a73737;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                text-align: center'>CSIP</div>
+                <div class='sip' id='csBig'  style='background: #a73737;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    text-align: center'>Cease SIP</div></td>
+                <td>Aditya Birla FrontLine Equity...</td>
+                <td>Equity Large Cap</td>
+                <td>
+                <td>125,356.000</td>
+                <td>104.52</td>
+            </td>
+                <td>13:32 12:30:56</td>
+                <td>Completed</td>
+               </tr>
+               <tr class='rowDiv'>
+                <td><div class='sip' style="background: #396afc;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    text-align: center">SIP</div></td>
+                    
+                <td>Aditya Birla FrontLine Equity...</td>
+                <td>Equity Large Cap</td>
+                <td>
+                <td>125,356.000</td>
+                <td>104.52</td>
+            </td>
+                <td>13:32 12:30:56</td>
+                <td>Completed</td>
+               </tr>
+               <tr class='rowDiv'>
+                <td ><div class='sip'  id='cs' style='background: #a73737;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                text-align: center;'>SCIP</div>
+                <div class='sip' id='csBig'  style='background: #a73737;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                text-align: center'>Cease SIP</div></td>
+                <td>Aditya Birla FrontLine Equity...</td>
+                <td>Equity Large Cap</td>
+                <td>
+                <td>125,356.000</td>
+                <td>104.52</td>
+            </td>
+                <td>13:32 12:30:56</td>
+                <td>Completed</td>
+               </tr>
+            </table>
+        </div>
+        <div class='tableDiv2'>
+            <table cellpadding='1' cellspacing='1' rules='groups'> 
+               <tr class='headerRow'>
+                <th >P/R</th>
+                <th>Fund Name   </th>
+                <th>Category</th>
+                <th>Amount (Rs.)</th>
+                <th>Nav</th>
+                <th>Date</th>
+                <th>Status</th>
+               </tr>
+               <tr class='rowDiv'>
+                <td ><div class='sip' id='p'  style="background: #396afc;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                text-align: center;padding-right: 1em;padding-left: 2em;" >P</div>
+                <div class='sip' id='pBig'  style="background: #396afc;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                text-align: center;padding-right: 1em;padding-left: 2em;" >Purchase</div>
+                </td>
+                <td>Aditya Birla FrontLine Equity...</td>
+                <td>Equity Large Cap</td>
+                <td>125,356.000</td>
+                <td>104.52</td>
+                <td>13:32 12:30:56</td>
+                <td>Completed</td>
+               </tr>
+               <tr class='rowDiv'>
+                <td ><div class='sip' id='p' style='background: #a73737;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                text-align: center'>R</div>
+                 <div class='sip' id='pBig'   style='background: #a73737;  /* fallback for old browsers */
+                 background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+                 background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                 text-align: center' >Redemption</div></td>
+                <td>Aditya Birla FrontLine Equity...</td>
+                <td>Equity Large Cap</td>
+                <td>125,356.000</td>
+                <td>104.52</td>
+                <td>13:32 12:30:56</td>
+                <td>Completed</td>
+               </tr>
+               <tr class='rowDiv'>
+                <td><div class='sip' id='p' style="background: #396afc;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    text-align: center ">P</div>
+                     <div class='sip' id='pBig'  style="background: #396afc;  /* fallback for old browsers */
+                     background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+                     background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                     text-align: center;padding-right: 1em;padding-left: 2em;" >Purchase</div></td>
+                <td>Aditya Birla FrontLine Equity...</td>
+                <td>Equity Large Cap</td>
+                <td>125,356.000</td>
+                <td>104.52</td>
+                <td>13:32 12:30:56</td>
+                <td>Completed</td>
+               </tr>
+               <tr class='rowDiv'>
+                <td ><div class='sip' id='p'  style='background: #a73737;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                text-align: center'>R</div>
+                 <div class='sip' id='pBig'  s style='background: #a73737;  /* fallback for old browsers */
+                 background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+                 background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                 text-align: center' >Redemption</div></td>
+                <td>Aditya Birla FrontLine Equity...</td>
+                <td>Equity Large Cap</td>
+                <td>125,356.000</td>
+                <td>104.52</td>
+                <td>13:32 12:30:56</td>
+                <td>Completed</td>
+               </tr>
+            </table>
+        </div>
+    </div>
+        </body>
+        </html>
